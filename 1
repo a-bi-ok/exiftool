@@ -16,3 +16,12 @@ ORIENTATIONS
 4 -- 180 + MIRRORED
 8 ---- 270 DEG
 7 -- 270 + MIRRORED
+
+
+exiftool -GPSAltitude -n IMG_2279.JPG
+
+exiftool -GPSAltitude=80 -n *.*
+
+exiftool -GPSAltitude -n *.*
+
+rm IMG_*.JPG_original
