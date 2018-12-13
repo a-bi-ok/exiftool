@@ -19,9 +19,16 @@ ORIENTATIONS
 
 
 exiftool -GPSAltitude -n IMG_2279.JPG
-
+SETTING DJI DRONE DATA EVELATION TO SURVEY PROPOSED HEIGHT INSTEAD OF THE ELEVEATION ABOVE SEA LEVEL
 exiftool -GPSAltitude=80 -n *.*
 
 exiftool -GPSAltitude -n *.*
 
 rm IMG_*.JPG_original
+
+exiftool -* -n IMG_2279.JPG
+
+exiftool -* -n IMG_2580.JPG
+
+
+exiftool -GPSAltitudeRef=0 -n *.*
